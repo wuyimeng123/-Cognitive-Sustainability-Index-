@@ -25,16 +25,16 @@ def plot_cognitive_dynamics(ax, k_g, tau_g, k_a, tau_a, mu, lambda_param):
     CSI_t = cognitive_sustainability_index(t, mu, lambda_param, k_g, tau_g, k_a, tau_a)
 
     ax.clear()
-    ax.plot(t, G_t, '#2B5B84', linewidth=2.5, label='认知增长')
-    ax.plot(t, A_t, '#5A8CBF', linewidth=2.5, label='认知萎缩')
-    ax.plot(t, CSI_t, '#8BC34A', linewidth=2.5, label='认知可持续性指数(CSI)')
+    ax.plot(t, G_t, '#2B5B84', linewidth=2.5, label='Cognitive Growth')
+    ax.plot(t, A_t, '#5A8CBF', linewidth=2.5, label='Cognitive Atrophy')
+    ax.plot(t, CSI_t, '#8BC34A', linewidth=2.5, label='Cognitive Sustainability Index')
 
     # 平衡区
     ax.axhline(y=0.55, color='#D3DEE8', linestyle=':', linewidth=2)
     ax.axhline(y=0.70, color='#D3DEE8', linestyle=':', linewidth=2)
-    ax.fill_between(t, 0.55, 0.70, color='#D3DEE8', alpha=0.2, label='认知平衡区')
+    ax.fill_between(t, 0.55, 0.70, color='#D3DEE8', alpha=0.2, label='Cognitive Balance Zone')
 
-    ax.set_xlabel('时间 (t)', fontsize=12)
+    ax.set_xlabel('Time spent interacting with AI', fontsize=12)
     ax.set_ylim(0, 1.05)
     ax.legend(loc='upper left', fontsize=10)
     ax.grid(True, alpha=0.3)
