@@ -40,7 +40,7 @@ def plot_cognitive_dynamics(ax, k_g, tau_g, k_a, tau_a, mu, lambda_param):
     ax.grid(True, alpha=0.3)
     
 PRESETS = {
-    "Studen": {
+    "Student": {
         "k_g": 0.5, "tau_g": 3.0,
         "k_a": 0.7, "tau_a": 5.0,
         "mu": 0.45, "lambda": 0.75
